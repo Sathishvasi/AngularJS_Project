@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="root">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body ng-controller="control">
+<div align="center">
+
+<link rel="stylesheet" href="style.css">
+<ul style="list-style-type: none;">
+
+<li ng-repeat="get1 in result">
+<table border="2" bordercolor="black">
+<tr>
+<td style="color:white;">{{get1.first}}</td> 
+<td style="color:white;">{{get1.second}}</td>
+<td style="color:white;">{{get1.third}}</td>
+<td style="color:white;">{{get1.fourth}}</td>
+</tr>
+</table>
+</li>
+
+</ul>
+<br><br><br><br><br><br>
+<input type="button" value="HOME" ng-click="home()"/><br>
+<input type="button" value="PURCHASE" ng-click="gopurchase()"/>
+
+</div>
+</body>
+</html>

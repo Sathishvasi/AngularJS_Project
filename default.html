@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="root">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="https://angular-ui.github.io/ui-router/release/angular-ui-router.min.js"></script>
+<script src="control.js"></script>
+
+</head>
+<body ng-controller="full">
+<marquee style="color:white;">Select your products to purchase...</marquee>
+  <h1><b>MSK LOGIN</b></h1><br>
+ 
+      <div class="form">
+        <input type="text" ng-model="user" placeholder="Username" />
+        <input type="password" ng-model="pass" placeholder="Password" />
+         <input type="submit" value="Login" ng-click="authenticate(user,pass)"/><br>
+         <input type="submit" value="Signup" ng-click="signup()"/>
+      </div> 
+   <br>
+   
+
+</body>
+</html>

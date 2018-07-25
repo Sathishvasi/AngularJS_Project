@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="root">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body ng-controller="controls">
+<h2><b>Enter your item to purchase</b></h2><br>
+<div class="form">
+<input type="text" ng-model="name" placeholder="Item name" />
+<input type="text" ng-model="price" placeholder="Price" />
+<input type="text" ng-model="quant" placeholder="Quantity" />
+<input type="submit" value="PURCHASE" ng-click="purchase(name,price,quant)"/>
+<input type="text" ng-model="bill" ng-readonly="name"  aria-label="Readonly field" /><br><br><br>
+</div>
+<br><br><br><br><br><br>
+<input type="button" value="VIEW DATABASE" ng-click="displays()"/><br>
+<input type="button" value="Logout" ng-click="home()"/><br>
+</body>
+</html>
